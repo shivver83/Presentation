@@ -74,3 +74,27 @@ Monitor the pipeline: Monitor the pipeline and Caiman to ensure that they are fu
 
 Note that the specific steps for integrating Caiman with Azure DevOps pipeline may vary depending on your specific use case and requirements. It is important to carefully plan and execute the integration to ensure a successful implementation.
 
+
+
+--------------------------
+
+**25/02 **
+
+okapi = apigee ( apigee proxies are created) - needs a GCP account 
+
+API Proxy Code
+In Apigee Edge, an API proxy is essentially a set of XML files arranged within the following file structure.
+
+API proxy code folder configuration.
+You expose APIs on Apigee Edge by implementing API proxies. API proxies decouple the frontend from your backend services. As you make backend changes to your services, front end apps continue to call the same API without any interruption.
+
+Apigee Edge / Apigee X / Apigee hybrid  ?????
+
+CAIMAN(ping identity) Register User by Invite API -> This API creates credential in CAIMAN and sends verification email. -> This API will be exposed on OKAPI as private API. All consumers will use this API via OKAPI.
+
+
+Questions - 
+
+1) will we be continuing our other azure infra components except for aad and apim ? PL stages will remain same for these components and new stages to be added for cayman and apigee ?
+2) are these shared instances of cayman and okapi in place and will we be using same instamces or we will setup new instances for digital twins ? if already in place , are they setup on prem or on cloud or running in some kubernetes cluster?
+3) After POC, will be able to provide estimate ?
