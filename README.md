@@ -92,9 +92,10 @@ Apigee Edge / Apigee X / Apigee hybrid  ?????
 
 CAIMAN(ping identity) Register User by Invite API -> This API creates credential in CAIMAN and sends verification email. -> This API will be exposed on OKAPI as private API. All consumers will use this API via OKAPI.
 
-
+ping identity is IDP ( ID provider) an dthen there is SP (service provider)
 Questions - 
 
 1) will we be continuing our other azure infra components except for aad and apim ? PL stages will remain same for these components and new stages to be added for cayman and apigee ?
 2) are these shared instances of cayman and okapi in place and will we be using same instamces or we will setup new instances for digital twins ? if already in place , are they setup on prem or on cloud or running in some kubernetes cluster?
 3) After POC, will be able to provide estimate ?
+4) Caiman (ping identity) - OIDC setup 
